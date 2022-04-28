@@ -7,7 +7,7 @@ docker run -p 27017:27017 --network distribuidos --name mongodb -d mongo
 
 docker run -p 2181:2181 -d -p 9092:9092 --name servicekafka --network distribuidos -e ADVERTISED_HOST=servicekafka -e NUM_PARTITIONS=3 johnnypark/kafka-zookeeper
 
-docker run -d -p 8888:8888 --network distribuidos --name app-config icesiops/appconfig:0.1.0
+docker run -d -p 8888:8888 --network distribuidos --name app-config cgironza/appconfig:0.1.0
 
 docker run -d -p 8006:8006 --network distribuidos --name app-invoice icesiops/appinvoice:0.1.0
 
