@@ -11,7 +11,7 @@ docker run -d -p 8888:8888 --network distribuidos --name app-config cgironza/app
 
 docker run -d -p 8006:8006 --network distribuidos --name app-invoice icesiops/appinvoice:0.1.0
 
-docker run -d -p 8010:8010 --network distribuidos --name app-pay icesiops/apppay:0.1.0
+docker run -d -p 8010:8010 --network distribuidos --name app-pay cgironza/apppay:0.1.0
 
 docker run -d -p 8082:8082 --network distribuidos --name app-transaction icesiops/apptransaction:0.1.0
 
